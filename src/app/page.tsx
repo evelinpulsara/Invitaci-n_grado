@@ -442,13 +442,15 @@ const handleMaps = () => {
               <div className="relative bg-slate-800/40 backdrop-blur-xl rounded-3xl p-12 md:p-16 border border-cyan-500/20 shadow-2xl">
                 <div className="text-center space-y-12">
                   <div>
-                    <div className="inline-flex items-center gap-3 mb-3"> {/* Gap aún más pequeño */}
-                      <Calendar className="text-cyan-400 h-6 w-6 sm:h-8 sm:w-8" /> {/* Ícono mini en móvil */}
-                       <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-white uppercase tracking-[0.3em]">
-                         Noviembre
-                       </h2>
-                      <Calendar className="text-cyan-400 h-6 w-6 sm:h-8 sm:w-8" />
-                    </div>
+                    <div className="flex justify-center mb-3">
+                      <div className="inline-flex items-center gap-3">
+                        <Calendar className="text-cyan-400 h-6 w-6 sm:h-8 sm:w-8" />
+                         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-white uppercase tracking-[0.3em]">
+                            Noviembre
+                         </h2>
+                       <Calendar className="text-cyan-400 h-6 w-6 sm:h-8 sm:w-8" />
+                      </div>
+                   </div>
                     <div className="flex justify-center">
                       <div className="w-48 h-px bg-linear-to-r from-transparent via-cyan-500 to-transparent"></div>
                     </div>
