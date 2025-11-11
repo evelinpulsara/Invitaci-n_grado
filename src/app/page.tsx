@@ -444,7 +444,7 @@ const handleMaps = () => {
                   <div>
                     <div className="inline-flex items-center gap-6 mb-4">
                       <Calendar className="text-cyan-400" size={40} />
-                      <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-white uppercase tracking-[0.3em]">Noviembre</h2>
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white uppercase tracking-[0.3em]">Noviembre</h2>
                       <Calendar className="text-cyan-400" size={40} />
                     </div>
                     <div className="flex justify-center">
