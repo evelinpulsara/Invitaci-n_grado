@@ -213,24 +213,41 @@ const handleMaps = () => {
                 </h2>
               </div>
 
-              <div className="flex justify-center gap-6 mt-8 items-center">
-                <img 
-                  src={processedSapo || '/imagenes/coso1.png'} 
-                  alt="Coso1" 
-                  className="w-16 h-16 object-contain animate-bounce drop-shadow-xl" 
-                />
-                <div className="relative">
-                  <Heart size={56} className="text-red-500 animate-pulse fill-current" />
-                  <div className="absolute inset-0 animate-ping">
-                    <Heart size={56} className="text-red-400 opacity-40" />
-                  </div>
-                </div>
-                <img 
-                  src={processedTiana || '/imagenes/coso2.png'} 
-                  alt="Coso2" 
-                  className="w-16 h-16 object-contain animate-bounce drop-shadow-xl" 
-                />
-              </div>
+              {/* Loading para los iconos personalizados */}
+<div className="flex justify-center gap-6 mt-8 items-center" style={{ minHeight: '80px' }}>
+  {processedSapo && processedTiana ? (
+    <>
+      <img 
+        src={processedSapo} 
+        alt="Decoración 1" 
+        className="w-16 h-16 object-contain animate-bounce drop-shadow-xl" 
+      />
+      <div className="relative">
+        <Heart size={56} className="text-red-500 animate-pulse fill-current" />
+        <div className="absolute inset-0 animate-ping">
+          <Heart size={56} className="text-red-400 opacity-40" />
+        </div>
+      </div>
+      <img 
+        src={processedTiana} 
+        alt="Decoración 2" 
+        className="w-16 h-16 object-contain animate-bounce drop-shadow-xl" 
+      />
+    </>
+  ) : (
+    // ✅ Animación de carga elegante (solo mientras se procesan)
+    <div className="flex flex-col items-center justify-center py-6">
+      <div className="relative mb-4">
+        <div className="absolute inset-0 rounded-full border-4 border-cyan-500/30 animate-spin"></div>
+        <div className="absolute inset-2 rounded-full border-4 border-cyan-400 animate-spin" style={{ animationDuration: '2s' }}></div>
+        <div className="absolute inset-4 rounded-full bg-slate-800/60 backdrop-blur-sm"></div>
+      </div>
+      <p className="text-cyan-300 text-sm font-serif tracking-widest animate-pulse">
+        Preparando detalles...
+      </p>
+    </div>
+  )}
+</div>
             </div>
           </div>
 
@@ -433,7 +450,7 @@ const handleMaps = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> 
           </div>
 
           <div className="max-w-5xl mx-auto mb-16 px-4 animate-fadeIn">
