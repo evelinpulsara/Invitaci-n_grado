@@ -81,7 +81,7 @@ useEffect(() => {
 
   const handleWhatsapp = () => {
     const phone = '+573228195056';
-    const message = 'Hola, confirmo mi asistencia a la entrega de batas de Deyby Gallardo 🎉🩺';
+    const message = 'Hola, confirmo mi asistencia a la entrega de batas de Deyby Argoty Gallardo 🎉🩺';
     window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank');
   };
 
@@ -436,10 +436,10 @@ const handleMaps = () => {
                       Bienvenidos a este día inolvidable
                     </h3>
                     <p className="text-cyan-200 text-xl font-light" style={{ fontFamily: 'Georgia, serif' }}>
-                      Con la bendición de Dios y el amor de mi madre
+                      Con la bendición de Dios y el amor de mis padres
                     </p>
                     <p className="text-3xl md:text-4xl font-script text-cyan-400" style={{ fontFamily: 'cursive' }}>
-                      Karol Gallardo
+                      Karol Gallardo y Deyby Argoty
                     </p>
                   </div>
 
